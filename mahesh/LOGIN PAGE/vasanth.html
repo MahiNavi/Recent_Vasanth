@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vasanthandco</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+	body{
+		margin:0px;
+
+
+	}
+	nav{
+		margin:0px 0px 20px 0px;
+		display:flex;
+		width:100%;
+		height:12%;
+		background-color:#CF000F;
+		position:fixed;
+		overflow: hidden;
+
+	}
+	li{
+		list-style: none;
+	}
+	.nav-li{
+		
+		padding: 20px;
+		color:white;
+		top:-25px;
+	}
+	input{
+		border-radius: 5px;
+		width: 700px;
+		height:35px;
+		border:none;
+		outline:none;
+		padding-left:7px;
+	}
+	.btn-nav{
+		border-radius: 5px;
+		width:130px;
+		height:35px;
+		border:none;
+		outline:none;
+		color:#CF000F;
+		
+	}
+	.searchcustom{
+		 position:relative;
+		 left:-36px;
+		 color:#CF000F;
+		 cursor: pointer;
+
+	}
+	.search-btn{
+		border: none;
+		outline: none;
+		background-color: transparent;
+	}
+	.nav-align{
+		display: block;
+		padding-top:45px;
+	}
+	.mega-menu{
+          color: black;
+     
+	}
+	.menu-table{
+		border-bottom:1px solid grey;
+		border-left:1px solid grey;
+		padding:5px;
+	
+	}
+	
+
+	.menu-table a{
+		display: inline-block;
+		text-decoration: none;
+		color: black;
+		height:35px;
+		width:200px;
+		padding-left:15px;
+		
+	}
+	
+	.menu-btn{
+		height:35px;
+		width:50px;
+		color: white;
+		background-color: #CF000F;
+		border:none;
+		cursor: pointer;
+	}
+	.chatbox{
+		background-color:#CF000F;
+		padding-top:12px;
+		width: 25px;
+		height:100px;
+		position: fixed;
+		border:1px solid red;
+		border-radius:5px;
+		top:500px;
+		right:7px;
+        writing-mode:vertical-rl; 
+        color:white;
+
+	}
+	.chat-icon{
+		border-radius:50%;
+		height:25%;
+		width:100%;
+		position:absolute;
+		top:90px;
+		left:-20px;
+		background-color: #CF000F;
+		padding-right:25px;
+		border:transparent;
+	}
+    .chat-icon:hover{
+    	background-color:white; 
+
+    }
+   .nav2{
+       clear: both;
+       background-color:#e08575;
+       
+       position:fixed;
+       height:125px;
+       width:100%;
+       margin-top:109px;
+       list-style: none;
+    }
+   
+    .nav2Cont a{
+    	text-decoration: none;
+    	color: green;
+    	display: inline-block;
+        float: left;
+        padding-left:65px;
+        padding-top:-20px;
+       
+    }
+    .container{
+		max-width: 1000px;
+		height: 100vh;
+
+
+	}
+	
+	.bottom-divs-heading{
+		background-color: #CF000F;
+		border:10px solid #CF000F ;
+		border-radius:5px;
+		color:white;
+		font-weight: bold;
+		position: relative;
+		/*margin-left:370px;
+		margin-top:-20px;*/
+		top:-15px;
+		left:15px;
+
+
+
+	}
+	.row{
+		z-index: -1;
+	}
+
+	.header-decoration{
+
+		border-top: 5px solid tomato;
+		width: 1000px;
+		bottom:25px;
+        z-index: -1;
+
+
+
+	}
+	.column{
+		display:inline-block;
+		padding: 15px;
+
+	}
+	.column-ac{
+		display:inline-block;
+		height:395px;
+	}
+
+.pannel-img{
+     width:85%;
+     height:200px;
+     position:absolute;
+     display:inline-block;
+     left:18px;
+     top:8px;
+}
+.column-pannel{
+	  height:410px;
+	  width:24%;
+	  border: 1px solid tomato;
+	  overflow:hidden;
+	  position:relative;
+	  border-radius:5px;
+	  
+      z-index: -1;
+	  
+}
+.caption-pannel{
+      
+	    position:relative;
+		
+		width:80%;
+		text-align:center;
+		top:235px;
+		padding:8px;
+
+}
+a{
+   text-decoration:none;
+} 
+.caption-pannel a{
+  color:black;
+}
+.caption-pannel a:hover{
+  color:red;
+}
+.cart,.buy{
+   border:1px solid transparent;
+   color:white;
+   height:30px;
+   font-size:12px;
+   display:inline-block;
+   width:40%;
+   text-align:center;
+   padding-top:10px;
+   border-radius:4px;
+   position:relative;
+   overflow:hidden;
+
+}
+.cart,.buy:hover{
+  text-shadow:1px 1px gray;
+  
+
+}
+.btn-pannel{
+ width:90%;
+ position:relative;
+ overflow:hidden;
+ display:inline-block;
+ left:2px;
+ top:270px;
+
+
+}
+
+.mobile-line{
+		border-top:1px solid gray;
+		border-bottom: 1px solid gray;
+		position:relative;
+		top:240px;
+		width:250px;
+		text-align:center;
+	}
+	.cart{
+	background-color:blue;}
+	.buy{
+	background-color:red;}
+	
+	.bottom-divs-heading{
+		background-color: #CF000F;
+		border:10px solid #CF000F ;
+		border-radius:5px;
+		color:white;
+		font-weight: bold;
+		position: relative;
+		/*margin-left:370px;
+		margin-top:-20px;*/
+		top:-15px;
+		left:10px;
+
+
+
+
+	}
+ .td-offer{
+ 	color: #228B22;
+ 	font-weight: bold;
+ 	text-align: center;
+ }
+ .footer-heading ,td{
+ 	color:#CF000F;
+ 	font-weight: bold;
+ 	font-family: Corbel ;
+ 	text-align: justify;
+ }
+</style>
+<body>
+	<table><tr>
+   <div class="nav1">
+	<nav>
+		<li class="nav-li" style="cursor:pointer;" >
+			<img src="vasant.png" style="width:65%;height:65%" />
+		</li>
+		<li class=" nav-li nav-align ">
+			<i class='fa fa-align-justify' style="font-size:30px;color:white ;cursor: pointer;">
+			&nbsp
+			</i>Menu
+			<div class="mega-menu">
+			 <ul>
+			 <li class="menu-table"><a  href="#">Mobiles</a></li>
+			 <li class="menu-table"><a  href="#">Laptops</a></li>
+			 <li class="menu-table"><a  href="#">Televisions</a></li>
+			 <li class="menu-table"><a  href="#">Laptops</a></li>
+			 <li class="menu-table"><a  href="#">Refrigerator</a></li>
+			 <li class="menu-table"><a  href="#">Washing machine</a></li>
+			 <li class="menu-table"><a  href="#">Home Theatre</a></li>
+			 <li class="menu-table"><a  href="#">Mixer Grinder</a></li>
+			 <li class="menu-table"><a  href="#">Home Appliances</a>
+			 	<button class="fa fa-arrow-right menu-btn" ></button></li>
+			 <li class="menu-table"><a  href="#">Home Entertainment</a>
+			    <button class="fa fa-arrow-right menu-btn" ></button></li>
+			 <li class="menu-table"><a  href="#"> Kitchen Appliances</a>
+			    <button class="fa fa-arrow-right menu-btn" ></button></li>
+			 <li class="menu-table"><a  href="#">Projector</a></li>
+			 <li class="menu-table"><a  href="#">combo</a></li>
+			</ul>
+			</div>
+				
+
+		</li>
+		<li class=" nav-li nav-align">
+			<input type="text" name="keyword" placeholder="Keyword here...." >
+			<button class="search-btn fa fa-search searchcustom" >
+			</button>
+		</li>
+		<li class=" nav-li nav-align">
+			<button class="btn-nav fa fa-arrow-right login"style="cursor:pointer;">Login
+			</button>
+		</li>
+		<li class="nav-li nav-align"><i class="fa fa-cart-arrow-down" style="font-size:19px;cursor: pointer;"></i>
+			Cart
+		</li>
+		<li class="nav-li">
+		   <img src="E:\mahesh\vasanthgif.gif" width="125px" height="95px"; />
+	    </li>
+    </nav>
+</div></tr>
+</table>
+    <!--Chat Box in right side-->
+    <div class="chatbox">
+    	 Chat with us
+        <button class="fa fa-comment chat-icon" style="color:white;font-size:20px"></button>
+    </div>
+    <!--List of items below the navbar-->
+    <div class="nav2">
+	         <li class="nav2Cont">
+	         	<span class="fa fa-angle-left" style="font-size: 35px;margin-top:35px;">
+	         		<a  href="#"></a>
+	         	</span>
+	         </li>
+    	     <li class="nav2Cont"><a  href="E:\mahesh\vasanth&co\LoginVasanth (1).html">Mobiles</a></li>
+			 <li class="nav2Cont"><a  href="#">Laptops</a></li>
+			 <li class="nav2Cont"><a  href="#">Televisions</a></li>
+			 <li class="nav2Cont"><a  href="#">Laptops</a></li>
+			 <li class="nav2Cont"><a  href="#">Refrigerator</a></li>
+			 <li class="nav2Cont"><a  href="#">Washing machine</a></li>
+			 <li class="nav2Cont"><a  href="#">Home Theatre</a></li>
+			 <li class="nav2Cont"><a  href="#">Mixer Grinder</a></li>
+			 <li class="nav2Cont"><a  href="#">Home Appliances</a></li>
+			 <li class="nav2Cont"><a  href="#">Home Theatre</a></li>
+			 <li class="nav2Cont"><a  href="#">Mixer Grinder</a></li>
+			 <li class="nav2Cont">
+			  <span class="fa fa-angle-right"style="font-size: 35px;margin-top:0px;padding-left: 55px;">
+			  	<a  href="#"></a>
+			  </span>
+			</li>
+    </div>
+    <center>
+	<div class="container">
+		<!--<div class="row">
+			<div class="column">
+				picture top carousel
+			</div>
+		</div>-->
+		<!--SHOP BY CATEGORY -->
+		<div class="header-decoration">
+		    <span class="bottom-divs-heading">SHOP BY CATEGORY
+		    </span>
+		    <br>
+	    </div>
+		<div class="row">
+			   <div class="column">
+					<img src="E:\mahesh\SHOPBY CATEGORY\mobiles.png" style="width:205px;height:125px">
+			         
+			    </div>
+				<div class="column">
+					<img src="E:\mahesh\SHOPBY CATEGORY\dishwasher.png" style="width:205px;height:125px">
+			         
+			    </div>
+				<div class="column">
+					<img src="E:\mahesh\SHOPBY CATEGORY\home-theatre.png" style="width:205px;height:125px">
+			         
+			    </div>
+				<div class="column">
+					<img src="E:\mahesh\SHOPBY CATEGORY\laptop.png" style="width:205px;height:125px">
+			         
+			    </div>
+				<div class="column">
+					<img src="E:\mahesh\SHOPBY CATEGORY\ac.png" style="width:205px;height:125px">
+			         
+			    </div>
+				<div class="column">
+					<img src="E:\mahesh\SHOPBY CATEGORY\refrigerator.png" style="width:205px;height:125px">
+			         
+			    </div>
+				<div class="column">
+					<img src="E:\mahesh\SHOPBY CATEGORY\tv.png" style="width:205px;height:125px">
+			         
+			    </div>
+				<div class="column">
+					<img src="E:\mahesh\SHOPBY CATEGORY\washing-machine.png" style="width:205px;height:125px">
+			         
+			    </div>
+			    <div class="column">
+					<img src="E:\mahesh\SHOPBY CATEGORY\shopbycate.gif" style="width:915px;height:145px">
+			         
+			    </div>
+
+			</div>
+	<!--AIR CONDITIONER -->
+
+	       <div class="header-decoration">
+		       <span class="bottom-divs-heading">AIR CONDITIONER
+		       </span>
+
+		       <br>
+	        </div>
+		  <div class="row">
+
+			   <div class="column-ac">
+
+					<img src="E:\mahesh\aircond\ac2.png" style="width:200px;height:325px">
+			         
+			    </div>
+				<div class="column-ac">
+					<img src="E:\mahesh\aircond\bluestar.png" style="width:200px;height:325px">
+			         
+			    </div>
+				<div class="column-ac">
+					<img src="E:\mahesh\aircond\voltas.png" style="width:200px;height:225px">
+			         
+			    </div>
+				<div class="column-ac">
+					<img src="E:\mahesh\aircond\ac4.png" style="width:200px;height:225px">
+			         
+			    </div>
+		  </div>	    
+<!--MOBILES-->
+		  <div class="header-decoration">
+		       <span class="bottom-divs-heading">MOBILES
+		       </span>
+		      
+		       <br>
+	        </div>
+		  <div class="row">
+			   <div class="column-pannel">
+                   <div>
+	                  <a  href="E:\mahesh\vasanth&co\LoginVasanth (1).html"><img src="E:\mahesh\mobiles\mob1.png" class="pannel-img" ></a>
+	                </div>
+	               <div class="caption-pannel">
+	                 <a href="#">Apple Iphone 12 128GB Green Mobile Phone</a>
+	               </div>
+	               <div>
+	                 <table class="mobile-line">
+			            <tr><td>94,900</td></tr>
+		             </table>
+	               </div>
+	               <div class="btn-pannel">
+	 	             <a href="#" class="cart">Add to Cart</a>
+		             <a href="#" class="buy">Buy Now</a>
+	               </div>
+                </div>
+ <div class="column-pannel">
+    <div>
+	     <img src="E:\mahesh\mobiles\mob2.png" class="pannel-img" >
+	</div>
+	<div class="caption-pannel">
+	     <a href="#">Apple Iphone 12 128GB Green Mobile Phone</a>
+	</div>
+	<div>
+	     <table class="mobile-line">
+			<tr><td>94,900</td></tr>
+		 </table>
+	</div>
+	<div class="btn-pannel">
+	 	<a href="#" class="cart">Add to Cart</a>
+		<a href="#" class="buy">Buy Now</a>
+	</div>
+ </div>
+ <div class="column-pannel">
+    <div>
+	     <img src="E:\mahesh\mobiles\mob3.png" class="pannel-img" >
+	</div>
+	<div class="caption-pannel">
+	     <a href="#">Apple Iphone 12 128GB Green Mobile Phone</a>
+	</div>
+	<div>
+	     <table class="mobile-line">
+			<tr><td>94,900</td></tr>
+		 </table>
+	</div>
+	<div class="btn-pannel">
+	 	<a href="#" class="cart">Add to Cart</a>
+		<a href="#" class="buy">Buy Now</a>
+	</div>
+ </div>
+ <div class="column-pannel">
+    <div>
+	     <img src="E:\mahesh\mobiles\mob4.png" class="pannel-img" >
+	</div>
+	<div class="caption-pannel">
+	     <a href="#">Apple Iphone 12 128GB Green Mobile Phone</a>
+	</div>
+	<div>
+	     <table class="mobile-line">
+			<tr><td>94,900</td></tr>
+		 </table>
+	</div>
+	<div class="btn-pannel">
+	 	<a href="#" class="cart">Add to Cart</a>
+		<a href="#" class="buy">Buy Now</a>
+	</div>
+ </div>
+    <div><img src="E:\mahesh\mobiles\mob.png" style="width:975px;height:145px">
+    </div>
+	<!-- TELEVISION-->
+	 <div class="header-decoration">
+		       <span class="bottom-divs-heading">TELEVISION
+		       </span>
+		       <br>
+	        </div>
+		  <div class="row">
+			   <div class="column-pannel">
+                   <div>
+	                 <img src="E:\mahesh\tv\tv1.png" class="pannel-img" >
+	                </div>
+	               <div class="caption-pannel">
+	                 <a href="#">Sony Bravia 55-inch KD-55x75K Smart Andriod LED TV</a>
+	               </div>
+	               <div>
+	                 <table class="mobile-line">
+			            <tr> 
+			            	<td>68390</td>
+			            	<td><s>99000</s></td>
+			            	<td class="td-offer">Save-32%</td>
+
+			            </tr>
+		             </table>
+	               </div>
+	               <div class="btn-pannel">
+	 	             <a href="#" class="cart">Add to Cart</a>
+		             <a href="#" class="buy">Buy Now</a>
+	               </div>
+                </div>
+                <div class="column-pannel">
+                   <div>
+	                 <img src="E:\mahesh\tv\tv2.png" class="pannel-img" >
+	                </div>
+	               <div class="caption-pannel">
+	                 <a href="#">Sony Bravia (43)inch KD-55x75K Smart Andriod LED TV</a>
+	               </div>
+	               <div>
+	                 <table class="mobile-line">
+			            <tr> 
+			            	<td>40841</td>
+			            	<td><s>53900</s></td>
+			            	<td class="td-offer">Save-24%</td>
+
+			            </tr>
+		             </table>
+	               </div>
+	               <div class="btn-pannel">
+	 	             <a href="#" class="cart">Add to Cart</a>
+		             <a href="#" class="buy">Buy Now</a>
+	               </div>
+                </div>
+                <div class="column-pannel">
+                   <div>
+	                 <img src="E:\mahesh\tv\tv3.png" class="pannel-img" >
+	                </div>
+	               <div class="caption-pannel">
+	                 <a href="#">SAMSUNG 43T5350 LED TV</a>
+	               </div>
+	               <div>
+	                 <table class="mobile-line">
+			            <tr> 
+			            	<td>27490</td>
+			            	<td><s>42400</s></td>
+			            	<td class="td-offer">Save-35%</td>
+
+			            </tr>
+		             </table>
+	               </div>
+	               <div class="btn-pannel">
+	 	             <a href="#" class="cart">Add to Cart</a>
+		             <a href="#" class="buy">Buy Now</a>
+	               </div>
+                </div>
+                <div class="column-pannel">
+                   <div>
+	                 <img src="E:\mahesh\tv\tv1.png" class="pannel-img" >
+	                </div>
+	               <div class="caption-pannel">
+	                 <a href="#">SAMSUNG 32T4450 LED TV</a>
+	               </div>
+	               <div>
+	                 <table class="mobile-line">
+			            <tr> 
+			            	<td>19290</td>
+			            	<td><s>23900</s></td>
+			            	<td class="td-offer">Save-19%</td>
+
+			            </tr>
+		             </table>
+	               </div>
+	               <div class="btn-pannel">
+	 	             <a href="#" class="cart">Add to Cart</a>
+		             <a href="#" class="buy">Buy Now</a>
+	               </div>
+	               
+                </div>
+                <div>
+	               	 <img src="E:\mahesh\tv\TVV.png"style="width:975px;height:145px">
+	               </div>
+            </div>
+<!--REFRIGERATOR-->  
+            <div class="header-decoration">
+		       <span class="bottom-divs-heading">REFRIGERATOR
+		       </span>
+		       <br>
+	        </div>
+		  <div class="row">
+			   <div class="column-pannel">
+                   <div>
+	                 <img src="E:\mahesh\REFREIGERATOR\RF1.png" class="pannel-img" >
+	                </div>
+	               <div class="caption-pannel">
+	                 <a href="#">Whirlpool 265 L 3 Star Frost Free Double Door Refrrigerator</a>
+	               </div>
+	               <div>
+	                 <table class="mobile-line">
+			            <tr> 
+			            	<td>32490</td>
+			            	<td><s>39750</s></td>
+			            	<td class="td-offer">Save-18%</td>
+
+			            </tr>
+		             </table>
+	               </div>
+	               <div class="btn-pannel">
+	 	             <a href="#" class="cart">Add to Cart</a>
+		             <a href="#" class="buy">Buy Now</a>
+	               </div>
+                </div>
+                <div class="column-pannel">
+                   <div>
+	                 <img src="E:\mahesh\REFREIGERATOR\RF2.png" class="pannel-img" >
+	                </div>
+	               <div class="caption-pannel">
+	                 <a href="#">Godrej 265 L 3 Star Frost Free Double Door Refrrigerator</a>
+	               </div>
+	               <div>
+	                 <table class="mobile-line">
+			            <tr> 
+			            	<td>25890</td>
+			            	<td><s>33015</s></td>
+			            	<td class="td-offer">Save-22%</td>
+
+			            </tr>
+		             </table>
+	               </div>
+	               <div class="btn-pannel">
+	 	             <a href="#" class="cart">Add to Cart</a>
+		             <a href="#" class="buy">Buy Now</a>
+	               </div>
+                </div>
+                <div class="column-pannel">
+                   <div>
+	                 <img src="E:\mahesh\REFREIGERATOR\RF3.png" class="pannel-img" >
+	                </div>
+	               <div class="caption-pannel">
+	                 <a href="#">Whirlpool 245 L 2 Star Roy  Double Door Refrrigerator</a>
+	               </div>
+	               <div>
+	                 <table class="mobile-line">
+			            <tr> 
+			            	<td>27490</td>
+			            	<td><s>42400</s></td>
+			            	<td class="td-offer">Save-35%</td>
+
+			            </tr>
+		             </table>
+	               </div>
+	               <div class="btn-pannel">
+	 	             <a href="#" class="cart">Add to Cart</a>
+		             <a href="#" class="buy">Buy Now</a>
+	               </div>
+                </div>
+                <div class="column-pannel">
+                   <div>
+	                 <img src="E:\mahesh\REFREIGERATOR\RF4.png" class="pannel-img" >
+	                </div>
+	               <div class="caption-pannel">
+	                 <a href="#">LG 260 L 2 Star Smart Inverter GL-N92BDSY Frost</a>
+	               </div>
+	               <div>
+	                 <table class="mobile-line">
+			            <tr> 
+			            	<td>23790</td>
+			            	<td><s>30699</s></td>
+			            	<td class="td-offer">Save-23%</td>
+
+			            </tr>
+		             </table>
+	               </div>
+	               <div class="btn-pannel">
+	 	             <a href="#" class="cart">Add to Cart</a>
+		             <a href="#" class="buy">Buy Now</a>
+	               </div>
+	               
+                </div>
+                <div>
+	               	 <img src="E:\mahesh\tv\TVV.png"style="width:975px;height:145px">
+	               </div>
+            </div>          
+
+<!--COMBO 1+1 OFFER-->  
+            <div class="header-decoration">
+		       <span class="bottom-divs-heading">COMBO 1+1 OFFER
+		       </span>
+		       <br>
+	        </div>
+		  <div class="row">
+			   <div class="column-pannel">
+                   <div>
+	                 <img src="E:\mahesh\combo\fan1.png" class="pannel-img" >
+	                </div>
+	               <div class="caption-pannel">
+	                 <a href="#">Crompton 48 inch High Speed Ceiling Fan Combo 1+1</a>
+	               </div>
+	               <div>
+	                 <table class="mobile-line">
+			            <tr> 
+			            	<td>4150</td>
+			            	<td><s>6798</s></td>
+			            	<td class="td-offer">Save-39%</td>
+
+			            </tr>
+		             </table>
+	               </div>
+	               <div class="btn-pannel">
+	 	             <a href="#" class="cart">Add to Cart</a>
+		             <a href="#" class="buy">Buy Now</a>
+	               </div>
+                </div>
+                <div class="column-pannel">
+                   <div>
+	                 <img src="E:\mahesh\combo\elce.png" class="pannel-img" >
+	                </div>
+	               <div class="caption-pannel">
+	                 <a href="#">Butterfly platinum 2.O Induction Stove Combo 1+1</a>
+	               </div>
+	               <div>
+	                 <table class="mobile-line">
+			            <tr> 
+			            	<td>4050</td>
+			            	<td><s>7806</s></td>
+			            	<td class="td-offer">Save-42%</td>
+
+			            </tr>
+		             </table>
+	               </div>
+	               <div class="btn-pannel">
+	 	             <a href="#" class="cart">Add to Cart</a>
+		             <a href="#" class="buy">Buy Now</a>
+	               </div>
+                </div>
+                <div class="column-pannel">
+                   <div>
+	                 <img src="E:\mahesh\combo\fan2.png" class="pannel-img" >
+	                </div>
+	               <div class="caption-pannel">
+	                 <a href="#">Usha Swift 48Inch (1200mm) Ceiling Fan Combo 1+1</a>
+	               </div>
+	               <div>
+	                 <table class="mobile-line">
+			            <tr> 
+			            	<td>3250</td>
+			            	<td><s>4220</s></td>
+			            	<td class="td-offer">Save-23%</td>
+
+			            </tr>
+		             </table>
+	               </div>
+	               <div class="btn-pannel">
+	 	             <a href="#" class="cart">Add to Cart</a>
+		             <a href="#" class="buy">Buy Now</a>
+	               </div>
+                </div>
+                <div class="column-pannel">
+                   <div>
+	                 <img src="E:\mahesh\combo\fan3.png" class="pannel-img" >
+	                </div>
+	               <div class="caption-pannel">
+	                 <a href="#">USHA Racer 1200MM Ultra High Speed ceiling Fan Combo 1+1 </a>
+	               </div>
+	               <div>
+	                 <table class="mobile-line">
+			            <tr> 
+			            	<td>3990</td>
+			            	<td><s>5090</s></td>
+			            	<td class="td-offer">Save-22%</td>
+
+			            </tr>
+		             </table>
+	               </div>
+	               <div class="btn-pannel">
+	 	             <a href="#" class="cart">Add to Cart</a>
+		             <a href="#" class="buy">Buy Now</a>
+	               </div>
+	               
+                </div>
+                <div>
+	               	 <img src="E:\mahesh\combo\offer.jpg"style="width:975px;height:245px">
+	               </div>
+            </div>
+<!--OUR BRANDS-->  
+            <div class="header-decoration">
+		       <span class="bottom-divs-heading">OUR BRANDS
+		       </span>
+		       <br>
+	        </div>  
+	        <div class="row">
+			   <div class="column">
+					<img src="E:\mahesh\BRANDS\Haier.png" style="width:95px;height:95px">
+			   </div> 
+			   <div class="column">
+					<img src="E:\mahesh\BRANDS\Hitachi.png" style="width:95px;height:95px">
+			   </div> 
+			   <div class="column">
+					<img src="E:\mahesh\BRANDS\HP.png" style="width:95px;height:95px">
+			   </div> 
+			   <div class="column">
+					<img src="E:\mahesh\BRANDS\Hyundai.jpg" style="width:95px;height:95px">
+			   </div> 
+			   <div class="column">
+					<img src="E:\mahesh\BRANDS\IFB.png" style="width:95px;height:95px">
+			   </div> 
+			   <div class="column">
+					<img src="E:\mahesh\BRANDS\JBL.png" style="width:95px;height:95px">
+			   </div>  
+			   <div class="column">
+					<img src="E:\mahesh\BRANDS\Kenstar.png" style="width:95px;height:95px">
+			   </div>   
+			   <!--<div class="column">
+					<img src="E:\mahesh\BRANDS\Kent.png" style="width:95px;height:95px">
+			   </div>
+			   <div class="column">
+					<img src="E:\mahesh\BRANDS\LG.png" style="width:95px;height:95px">
+			   </div>     
+			   <div class="column">
+					<img src="E:\mahesh\BRANDS\Mccoy.png" style="width:95px;height:95px">
+			   </div>
+			   <div class="column">
+					<img src="E:\mahesh\BRANDS\Lloyd.png" style="width:95px;height:95px">
+			   </div>
+			   <div class="column">
+					<img src="E:\mahesh\BRANDS\Oppo.png" style="width:95px;height:95px">
+			   </div>-->
+            </div>
+ 
+  	<!-- IFRAME have to attach fo add video-->
+  <!-- Bottom Img before footer-->
+
+                <div >
+					<img src="E:\mahesh\bottom.png" style="width:1000px;height:95px">
+			   </div>
+			   </div></center>
+ 
+</body>
+</html>

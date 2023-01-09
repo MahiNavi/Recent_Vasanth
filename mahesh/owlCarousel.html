@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="vasanthStyle.css">
+<style type="text/css">
+	.btns{
+  display: table;
+  margin: 30px auto;
+}
+.customNextBtn, .customPreviousBtn{
+      float: right;
+    color: #CF000F;
+    padding: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+	
+<div class="nav2 owl-carousel ">
+	          
+	         <li class="nav2Cont ">
+	         	<div class="btns">
+                  <div class="customPreviousBtn"><span class="fa fa-angle-left" style="font-size: 35px;margin-top:35px;">
+	         		<a  href="#"></a>
+	         	</span></div>
+              </div>
+	         </li>
+    	     <li class="nav2Cont"><img src="nav-carousel/ac.png" style="width:105px;height:105px;"><a  href="#">Mobiles</a></li>
+			 <li class="nav2Cont"><img src="nav-carousel/laptop.png" style="width:105px;height:105px;"><a  href="#">Laptops</a></li>
+			 <li class="nav2Cont"><img src="nav-carousel/tv.png" style="width:105px;height:105px;"><a  href="#">Televisions</a></li>
+		
+			 <li class="nav2Cont"><img src="nav-carousel/fridge.png" style="width:105px;height:105px;"><a  href="#">Refrigerator</a></li>
+			 <li class="nav2Cont"><img src="nav-carousel/washing-machine.png" style="width:105px;height:105px;"><a  href="#">Washing machine</a></li>
+			 <li class="nav2Cont"><img src="nav-carousel/home-theatre.png" style="width:105px;height:105px;"><a  href="#">Home Theatre</a></li>
+			 <li class="nav2Cont"><img src="nav-carousel/ac.png" style="width:105px;height:105px;"><a  href="#">Mixer Grinder</a></li>
+			 <li class="nav2Cont"><img src="nav-carousel/home-appl.png" style="width:105px;height:105px;"><a  href="#">Home Appliances</a></li>
+			
+			 <li class="nav2Cont"><img src="nav-carousel/mobiles.png" style="width:105px;height:105px;"><a  href="#">Mobiles</a></li>
+			 <li class="nav2Cont">
+			  <div class="btns">
+                  <div class="customNextBtn"><span class="fa fa-angle-right" style="font-size: 35px;margin-top:35px;">
+	         		<a  href="#"></a>
+	         	</span></div>
+			</li>
+
+  
+    </div>
+
+
+<script>
+	$(document).ready(function(){
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
+    loop:true,
+    margin:5,
+    nav:false,
+    responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 5
+    }
+  }
+  });
+	 // Custom Button
+  $('.customNextBtn').click(function() {
+    owl.trigger('next.owl.carousel');
+  });
+  $('.customPreviousBtn').click(function() {
+    owl.trigger('prev.owl.carousel');
+  });
+  
+});
+</script>
+</body>
+</html>
